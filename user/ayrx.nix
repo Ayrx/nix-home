@@ -3,26 +3,38 @@
 {
   # Packages to install
   home.packages = with pkgs; [
-    fortune
+    # Core Tools
+    ripgrep
+    tokei
+    curl
+    wget
+    fish
+    tmux
+    gnupg
     neovim
-    cmake
+
+    # Dev Tools
+    openssl
     gcc
     gdb
     git
-    openssl
+    llvm
+    sqlite
+    sqlitebrowser
+    cmake
     libffi
-    wget
+
+    # Archive Tools
     p7zip
     xz
     zip
-    fish
-    tmux
-    curl
-    llvm
-    gnupg
-    sqlite
-    sqlitebrowser
+
+    # Language-specific Tools
     rustup
+    nodejs
+
+    # Trivia
+    fortune
   ];
 
   # Git Configurations
@@ -41,8 +53,9 @@
     color = { ui = "auto"; };
   };
 
-home.file.".config/nvim/init.vim".source = ../config/nvim/init.vim;
-home.file.".config/nvim/coc-settings.json".source = ../config/nvim/coc-settings.json;
-home.file.".tmux.conf".source = ../config/tmux/.tmux.conf;
-home.file.".config/fish/config.fish".source = ../config/fish/config.fish;
+  # Dotfiles
+  home.file.".config/nvim/init.vim".source = ../config/nvim/init.vim;
+  home.file.".config/nvim/coc-settings.json".source = ../config/nvim/coc-settings.json;
+  home.file.".tmux.conf".source = ../config/tmux/.tmux.conf;
+  home.file.".config/fish/config.fish".source = ../config/fish/config.fish;
 }
