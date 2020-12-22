@@ -33,6 +33,9 @@
     rustup
     nodejs
 
+    # Others
+    cloudflared
+
     # Trivia
     fortune
   ];
