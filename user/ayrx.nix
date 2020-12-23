@@ -11,7 +11,6 @@
     fish
     tmux
     gnupg
-    neovim
 
     # Dev Tools
     openssl
@@ -24,6 +23,10 @@
     cmake
     libffi
 
+    # Security
+    jadx
+    jd-gui
+
     # Archive Tools
     p7zip
     xz
@@ -35,6 +38,8 @@
 
     # Others
     cloudflared
+    terraform
+    packer
 
     # Trivia
     fortune
@@ -55,6 +60,15 @@
     core = { autocrlf = "input"; editor = "nvim"; };
     color = { ui = "auto"; };
   };
+
+  # Neovim
+  programs.neovim.enable = true;
+  programs.neovim.viAlias = true;
+  programs.neovim.vimAlias = true;
+  programs.neovim.vimdiffAlias = true;
+  programs.neovim.withNodeJs = true;
+  programs.neovim.withPython = true;
+  programs.neovim.withPython3 = true;
 
   # Dotfiles
   home.file.".config/nvim/init.vim".source = ../config/nvim/init.vim;

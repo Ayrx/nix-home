@@ -23,19 +23,6 @@ function fish_greeting
     fortune -a
 end
 
-function cf
-    ~/tools/cloudflared access login https://canopy.centurioninfosec.team > /dev/null
-    set -x CANOPY_CF_TOKEN (~/tools/cloudflared access token -app=https://canopy.centurioninfosec.team)
-end
-
-function musl-build
-  docker run \
-    -v cargo-cache:/root/.cargo/registry \
-    -v "$PWD:/volume" \
-    --rm -it clux/muslrust cargo build --release
-end
-
 # Aliases
 abbr -a autochrome ~/.local/autochrome/chrome --remote-debugging-port=9222
 abbr -a ssh-kali ssh root@128.199.151.198
-alias vim nvim
