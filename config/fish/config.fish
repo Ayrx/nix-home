@@ -1,5 +1,8 @@
 set -x EDITOR nvim
 
+# Nix setup
+set PATH ~/.nix-profile/bin $PATH
+
 # Rust setup
 set PATH ~/.cargo/bin $PATH
 set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
@@ -25,4 +28,3 @@ end
 
 # Aliases
 abbr -a autochrome ~/.local/autochrome/chrome --remote-debugging-port=9222
-abbr -a ssh-kali ssh root@128.199.151.198
