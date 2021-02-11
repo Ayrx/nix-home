@@ -8,7 +8,6 @@
     tokei
     curl
     wget
-    fish
     tmux
     gnupg
 
@@ -18,7 +17,6 @@
     git
     llvm
     sqlite
-    #sqlitebrowser
     cmake
     libffi
 
