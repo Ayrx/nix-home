@@ -2,6 +2,7 @@ set -x EDITOR nvim
 
 # Nix setup
 set PATH ~/.nix-profile/bin $PATH
+set -x NIX_PATH ~/.nix-defexpr/channels $NIX_PATH
 
 # Rust setup
 set PATH ~/.cargo/bin $PATH
@@ -12,6 +13,8 @@ set -x PYTHONDONTWRITEBYTECODE 1
 set PATH ~/tools/bin $PATH
 set PATH ~/tools/ansible_bin $PATH
 set PATH ~/.nix-profile/bin $PATH
+
+set -x NIX_SSL_CERT_FILE /etc/ssl/cert.pem
 
 # Functions
 function ara
