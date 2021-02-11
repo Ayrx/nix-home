@@ -14,7 +14,6 @@
 
     # Dev Tools
     openssl
-    gcc
     gdb
     git
     llvm
@@ -69,6 +68,9 @@
   programs.neovim.withNodeJs = true;
   programs.neovim.withPython = true;
   programs.neovim.withPython3 = true;
+  programs.neovim.extraPython3Packages = (ps: with ps; [
+    pylint
+  ]);
 
   # Dotfiles
   home.file.".config/nvim/init.vim".source = ../config/nvim/init.vim;
