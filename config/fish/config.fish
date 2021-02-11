@@ -16,6 +16,12 @@ set PATH ~/.nix-profile/bin $PATH
 
 if test (uname) = "Darwin"
     set -x NIX_SSL_CERT_FILE /etc/ssl/cert.pem
+
+    if test (arch) = "arm64"
+        eval (/opt/homebrew/bin/brew shellenv)
+    else
+        eval (/usr/local/bin/brew shellenv)
+    end
 end
 
 # Functions
