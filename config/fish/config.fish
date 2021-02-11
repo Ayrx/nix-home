@@ -14,7 +14,9 @@ set PATH ~/tools/bin $PATH
 set PATH ~/tools/ansible_bin $PATH
 set PATH ~/.nix-profile/bin $PATH
 
-set -x NIX_SSL_CERT_FILE /etc/ssl/cert.pem
+if test (uname) = "Darwin"
+    set -x NIX_SSL_CERT_FILE /etc/ssl/cert.pem
+end
 
 # Functions
 function ara
