@@ -8,7 +8,6 @@
     tokei
     curl
     wget
-    tmux
     gnupg
 
     # Dev Tools
@@ -19,6 +18,7 @@
     sqlite
     cmake
     libffi
+    apktool
 
     # Security
     jadx
