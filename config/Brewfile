@@ -3,6 +3,8 @@ cask "1password"
 cask "alfred"
 cask "spotify"
 cask "vlc"
+cask "qview"
+cask "dash"
 
 brew "tmux"
 brew "python@3.9"
