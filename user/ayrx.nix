@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     # Core Tools
     ripgrep
+    fd
     tokei
     curl
     wget
