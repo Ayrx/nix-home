@@ -82,14 +82,14 @@ endif
 
 call plug#begin('~/.config/nvim/plugged/')
 
-Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/joshdick/onedark.vim'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/Vimjas/vim-python-pep8-indent.git'
-Plug 'junegunn/fzf'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -148,6 +148,9 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 "Configure Rust
 let g:rustfmt_command = "rustfmt +stable"
 let g:rustfmt_autosave_if_config_present = 1
+
+"Configure fzf
+nnoremap <silent> <C-p> :Files<CR>
 
 set tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
