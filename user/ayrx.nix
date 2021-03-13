@@ -7,6 +7,8 @@
     ripgrep
     fd
     tokei
+    bat
+    fzf
     curl
     wget
     gnupg
@@ -158,4 +160,5 @@ autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 expandtab
   home.file.".config/nvim/coc-settings.json".source = ../config/nvim/coc-settings.json;
   home.file.".tmux.conf".source = ../config/tmux/.tmux.conf;
   home.file.".config/fish/config.fish".source = ../config/fish/config.fish;
+  home.file.".gitignore".source = ../config/.gitignore;
 }

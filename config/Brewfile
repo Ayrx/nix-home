@@ -6,6 +6,8 @@ cask "vlc"
 cask "qview"
 cask "dash"
 cask "android-platform-tools"
+cask "android-studio"
+cask "homebrew/cask-versions/adoptopenjdk8"
 
 brew "tmux"
 brew "python@3.9"
