@@ -81,10 +81,6 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Reenable this config once neovim 0.5.0 is released
 " setlocal tagfunc=CocTagFunc
 
-"Configure Rust
-let g:rustfmt_command = "rustfmt +stable"
-let g:rustfmt_autosave_if_config_present = 1
-
 set tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype htmldjango setlocal tabstop=2 shiftwidth=2 expandtab

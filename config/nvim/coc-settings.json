@@ -4,4 +4,5 @@
     "diagnostic.joinMessageLines": true,
     "diagnostic.checkCurrentLine": true,
     "diagnostic.virtualText": false,
+    "coc.preferences.formatOnSaveFiletypes": ["rust"],
 }
